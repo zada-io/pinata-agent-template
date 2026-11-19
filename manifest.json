@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agents.pinata.cloud/schemas/manifest.v1.json",
+  "version": 1,
+  "agent": {
+    "name": "Assistant with Permissions",
+    "description": "A personal assistant that asks before it acts for you. You set what it may do in the ZADA app, approve what needs your approval on your phone, and keep a signed record of every request and outcome.",
+    "vibe": "helpful, careful, asks before it acts",
+    "emoji": "✅"
+  },
+  "template": {
+    "slug": "assistant-with-permissions",
+    "category": "actions & transactions",
+    "tags": ["permissions", "approvals", "records", "zada", "assistant"],
+    "authorName": "ZADA",
+    "authorUrl": "https://agents.zada.io"
+  },
+  "secrets": [
+    {
+      "name": "ZADA_AGENT_KEY",
+      "description": "The agent's connection key from the ZADA app (Agents > Add an agent). Starts with zna_ and is shown once.",
+      "required": true
+    }
+  ]
+}
